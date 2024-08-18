@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "dev" : "nodemon index2.js"
+    "dev": "nodemon index2.js"
   },
   "keywords": [
     "express",
