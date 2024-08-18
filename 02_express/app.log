@@ -1,0 +1,4 @@
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/allCourses\",\"status\":\"200\",\"responseTime\":\"1.883\"}","timestamp":"2024-08-18T20:51:42.822Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"POST\",\"url\":\"/allCourses\",\"status\":\"200\",\"responseTime\":\"0.325\"}","timestamp":"2024-08-18T20:52:21.741Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"DELETE\",\"url\":\"/allCourses/1\",\"status\":\"200\",\"responseTime\":\"0.726\"}","timestamp":"2024-08-18T20:52:48.463Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"{\"method\":\"GET\",\"url\":\"/allCourses\",\"status\":\"200\",\"responseTime\":\"0.470\"}","timestamp":"2024-08-18T20:52:54.815Z"}
