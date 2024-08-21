@@ -1,15 +1,14 @@
-import dotenv from 'dotenv';
-import logger from '../logger.js'
+import dotenv from "dotenv";
+import logger from "../logger.js";
 import morgan from "morgan";
-import express from "express";
 import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
 dotenv.config({
-  path: './env'
-})
-const app = express()
+  path: "./env",
+});
+
 const port = process.env.PORT || 8000;
-app.use(express.json());
 
 const morganFormat = ":method :url :status :response-time ms";
 app.use(
@@ -28,8 +27,12 @@ app.use(
   })
 );
 
-app.listen(port, () => {
-  console.log("Working");
-})
-
 connectDB()
+  .then(
+    app.listen(port, () => {
+      console.log(`Server is running at port ${port}`);
+    })
+  )
+  .catch((err) => {
+    console.log("MONDODB connection falied", err.message);
+  });
