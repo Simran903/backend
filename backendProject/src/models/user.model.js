@@ -36,8 +36,7 @@ const userSchema = new mongoose.Schema(
     },
     // Cover image field: Required, stores a URL or path to the user's cover image
     coverImage: {
-      type: String,
-      required: true,
+      type: String
     },
     // Watch history field: Array of references to Video documents (stores video IDs)
     watchHistory: [
