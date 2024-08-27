@@ -42,7 +42,7 @@ const userSchema = new mongoose.Schema(
     // Watch history field: Array of references to Video documents (stores video IDs)
     watchHistory: [
       {
-        type: Schema.Types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Video",
       },
     ],
